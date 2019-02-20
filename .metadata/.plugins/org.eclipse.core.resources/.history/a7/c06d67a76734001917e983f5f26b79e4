@@ -1,0 +1,22 @@
+package view;
+
+import java.net.ConnectException;
+import java.sql.PreparedStatement;
+
+import dao.Conexao;
+
+public class PessoaInsert {
+	public static void mains(String[] args) {
+		  Pessoa p = new Pessoa();
+		  conn = Conexao.abrir();
+	         String sql = "INSERT INTO cadastro(id,nome) VALUES (?,?)";
+	         
+	        PreparedStatement stmt = con.prepareStatement("");
+	         
+	         p.setId(0);
+	         p.setNome("teste");
+	         p.getSenha();
+
+}
+
+}

@@ -1,0 +1,15 @@
+package dao;
+
+import view.Pessoa;
+
+public class PessoaDao  {
+	  public static void main(String[] args) {
+	         Pessoa p = new Pessoa();
+	         String sql = "INSERT INTO tbcadastroJava(id,nome, senha) VALUES (?,?,?)";
+	         p.setId(0);
+	         p.setNome("teste");
+	         p.getSenha();
+	    }
+	
+
+}

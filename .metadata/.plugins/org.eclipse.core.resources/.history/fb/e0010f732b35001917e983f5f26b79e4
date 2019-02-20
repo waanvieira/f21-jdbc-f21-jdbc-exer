@@ -1,0 +1,18 @@
+package DAO;
+
+import br.com.caelum.jdbc.Contato;
+
+public class ContatoDao {	
+	public void cadastra(Contato contato) {
+		String sql ="INSERT INTO tbContatos(id, nome, email, endereco, dataNascimento) VALUES('NULL', ?, ?, ?, ?)";
+		try {
+			
+		}catch (Exception e) {
+			throw new RuntimeException("Erro" + e);
+			// TODO: handle exception
+		}
+		
+		
+	}
+
+}

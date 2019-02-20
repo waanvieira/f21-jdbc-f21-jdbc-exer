@@ -1,0 +1,11 @@
+
+//funções da pagina index
+function mundo(){
+	var a = document.getElementById("variavel").value;
+	if(document.getElementById("variavel").value == ""){
+		alert("Digite um nome");
+		return false;
+	}	
+	else alert(a);
+}
+

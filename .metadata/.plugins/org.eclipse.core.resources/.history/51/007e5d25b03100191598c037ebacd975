@@ -1,0 +1,38 @@
+package cap5;
+
+public class Contrutores {
+	String fabricante;
+	String modelo;
+	int ano;
+	
+	Contrutores(String fabricante, String modelo, int ano){
+		setFabricante(fabricante);
+		setModelo(modelo);
+		setAno(ano);
+	}
+	//fabricante
+	String getFabricante() {
+		return fabricante;
+	}
+	
+	void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}	
+	//modelo
+	String getModelo() {
+		return modelo;
+	}
+	
+	void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	//ano
+	int getAno() {
+		return ano;
+	}
+	
+	void setAno(int ano) {
+		this.ano = ano;
+	}
+	
+}

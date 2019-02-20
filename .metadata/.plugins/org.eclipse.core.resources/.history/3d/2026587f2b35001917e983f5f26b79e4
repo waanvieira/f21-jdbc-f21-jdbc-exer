@@ -1,0 +1,32 @@
+package DAO;
+
+import java.sql.PreparedStatement;
+import com.mysql.jdbc.Connection;
+import br.com.caelum.jdbc.Contato;
+import DAO.*;
+
+public class ContatoDao {
+	
+	//conexao com o banco
+	
+	private Connection connection;
+	
+	public ContatoDao() {
+		this.connection = new ConnectioFactory().getConnection();
+	}
+	
+	public void cadastra(Contato contato) {
+		String sql ="INSERT INTO tbContatos(id, nome, email, endereco, dataNascimento) VALUES('NULL', ?, ?, ?, ?)";
+		try {
+			PreparedStatement stmt = connection.clientPrepareStatement(sql);
+			
+			
+		}catch (Exception e) {
+			throw new RuntimeException("Erro" + e);
+			// TODO: handle exception
+		}
+		
+		
+	}
+
+}

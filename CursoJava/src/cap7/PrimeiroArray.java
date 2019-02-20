@@ -1,0 +1,41 @@
+package cap7;
+
+public class PrimeiroArray {
+	public static void main(String[] args) {
+		System.out.println("OI");
+		
+		int x = 10;
+		int y = 20;
+		int z = 30;
+		int [] numeros = new int[3];
+		numeros[0] =10;
+		numeros[1] =20;
+		numeros[2] =30;
+		
+		for (int i =0; i < numeros.length; i++) {
+			System.out.println("Numeros " + numeros[i]);
+		}
+		//int tipo do array
+		//[] indicando que é um array
+		//numeros - nome do array
+		// new iniciando um novo objeto que é o array
+		//int tipo do array
+		//[3] quantidade de valores no array		
+		//String nomes[] = new String[3];
+	//o java permite cs [] antes ou depois do nome
+	
+		//Array simplificado
+		int numeros2[] = {10, 20, 30};
+		//Para criar array assim tem que colocar {} e não []
+		for(int i =0; i <numeros2.length; i++) {
+			System.out.println("Numeros simplificados" + numeros2[i]);
+		}
+		
+		//Array String
+		String nomes[] = {" Joao", " Maria", " Teste"};
+		for(int i = 0; i < nomes.length; i++) {
+			System.out.print(" O nome é: " + nomes[i]);
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+package cap11;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class VariosExemplos {
+	public static void main(String[] args) {
+	//Treeset garante que a ordem dos elementos seja ascendente, tomando
+		//por base sua ordem narutal - não permite duplicações
+		
+		System.out.println("--Com Treeset ------------------");
+		
+		Set<String> cursos = new TreeSet<>();
+		
+		cursos.add("PHP");
+		cursos.add("PHP");
+		cursos.add("Linux");
+		cursos.add("Asp");
+		cursos.add("Java");
+		cursos.add("Delphi");
+		
+		for(String curso : cursos) {
+			System.out.println("Curso: " + curso);
+		}
+		
+		System.out.println(cursos);
+	
+	}
+	
+	
+	System.out.println("--Com Hashset ------------------");
+	
+	Set<String> cursos3 = new HashSet<>();
+	
+	cursos3.add("PHP");
+	cursos3.add("PHP");
+	cursos3.add("Linux");
+	cursos3.add("Asp");
+	cursos3.add("Java");
+	cursos3.add("Delphi");
+	
+	for(String curso : cursos3) {
+		System.out.println("Curso: " + cursos3);
+	}
+	
+	System.out.println(cursos3);
+
+}
+	
+}

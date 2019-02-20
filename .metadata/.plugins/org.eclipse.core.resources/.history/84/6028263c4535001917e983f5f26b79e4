@@ -1,0 +1,35 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import Objetos.Usuario;
+
+public class Crud {
+	
+	private Connection connection;
+	
+	public Crud() {
+		this.connection = new ConnectionFactory().getConnection();
+	}
+	
+	public void cadastroUsuario(Usuario usuario) {
+		try {
+			String sql = "INSERT INTO tbUsuario (pkid, cnmUser, cnmSenha) VALUES(?, ?)";
+			PreparedStatement stmt = connection.prepareStatement(sql);
+			stmt.setString(1, usuario.setUsuario());
+			stmt.setString(2, usuario.setSenha());
+			
+			stmt.execute();
+			stmt.close();
+			
+			System.out.println("O Usuario" + usuario.getUsuario() + " foi cadastrado com sucesso");
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+			throw new RuntimeException(e);
+		}
+		
+	}
+
+}

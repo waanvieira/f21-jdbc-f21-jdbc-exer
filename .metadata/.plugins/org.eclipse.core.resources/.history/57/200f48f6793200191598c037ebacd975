@@ -1,0 +1,28 @@
+package cap8.cap4;
+
+public class Motorista extends Funcionario{
+	private int nrCnhr;
+	private int tempoDeExperiencia;
+	
+	public int getNrCnhr() {
+		return nrCnhr;
+	}
+
+	public void setNrCnhr(int nrCnhr) {
+		this.nrCnhr = nrCnhr;
+	}
+
+	public int getTempoDeExperiencia() {
+		return tempoDeExperiencia;
+	}
+
+	public void setTempoDeExperiencia(int tempoDeExperiencia) {
+		this.tempoDeExperiencia = tempoDeExperiencia;
+	}
+
+	
+	
+	void dirigir() {
+		
+	}
+}

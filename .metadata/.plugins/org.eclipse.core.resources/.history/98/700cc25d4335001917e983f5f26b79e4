@@ -1,0 +1,17 @@
+package DAO;
+
+import java.sql.Connection;
+
+public class TestaConexao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Connection conecta = new ConnectionFactory().getConnection();
+		ConnectionFactory conect = new ConnectionFactory();
+		System.out.println("Conexao estabelecida");
+		
+
+	}
+
+}

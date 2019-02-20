@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"  type="text/css" href="css/style.css"/>
+<script type="text/javascript">
+function mundo(){
+	var a = document.getElementById("variavel").value;
+	if(document.getElementById("variavel").value == ""){
+		alert("Digite um nome");
+		return false;
+	}	
+	else alert(a);
+}
+
+</script>
+<title>Welcome to curso</title>
+</head>
+<body>
+<h1><font color="red" size="39px">ola mundo</font></h1>
+<h3>Texto aleatorio a ser feito</h3>
+<form id=form1 method="get" action="html2.html">
+<label>Digite usuário</label>
+<input type="text" name=variavel id=variavel placeholder="Digite seu nome">
+<br><label>Digite a senha</label>
+<input type="password" name=senha id=senha placeholder="Digite sua senha">
+
+<input type="submit" onclick="mundo();" value=clique aqui>
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import view.Pessoa;
+
+public class PessoaDao  {
+	  public static void main(String[] args) throws SQLException {
+		  
+		  	Connection conexao = ConexaoFatory.criarConexao();		  	
+	         
+		  	Pessoa p = new Pessoa();	         
+	         String sql = "INSERT INTO tbUsuarios(id,nome, senha) VALUES (?,?,?)";
+	         p.setId(0);
+	         p.setNome("teste");
+	         p.setSenha("Senha");
+	    }
+	
+
+}

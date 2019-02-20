@@ -1,0 +1,84 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+import br.com.caelum.jdbc.Contato;
+
+public class ContatoDao {
+	
+	//conexao com o banco	
+	public Connection connection;
+	
+	public ContatoDao() {
+		this.connection = new ConnectioFactory().getConnection();
+	}	
+	
+	public void cadastra(Contato contato) {		
+		String sql ="INSERT INTO tbcontatos " + "(nome, email, endereco)"
+					+ "VALUES(?, ?, ?)";		
+		try {
+			PreparedStatement stmt = connection.prepareStatement(sql);
+			stmt.setString(1, contato.getNome());
+			stmt.setString(2, contato.getEmail());
+			stmt.setString(3, contato.getEndereco());
+			//java.sql.Date dataSQL = new Date();
+			//stmt.setString(4, "2019-02-20");
+			//stmt.setDate(4, new Date(contato.getDataNascimento().getTimeInMillis()));
+			//java.sql.Date dataParaGravar = new java.sql.Date(Calendar.getInstance().getTimeInMillis());
+		    //stmt.setDate(4, dataParaGravar);
+		    
+			//stmt.setDate(4, new Date(contato.getDataNascimento().getTimeInMillis()));
+			
+			//System.out.println;
+			
+			//executa a query
+			stmt.execute();
+			//fecha a sql do banco
+			stmt.close();
+			
+		}catch (Exception e) {
+			throw new RuntimeException("Erro" + e);
+			// TODO: handle exception
+		}		
+	}
+	
+	public List<Contato> getLista() {
+        try {
+            List<Contato> contatos = new ArrayList<Contato>();
+            PreparedStatement stmt = this.connection.
+                    prepareStatement("select * from tbcontatos");
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                // criando o objeto Contato
+                Contato contato = new Contato();
+                contato.setId(rs.getLong("id"));
+                contato.setNome(rs.getString("nome"));
+                contato.setEmail(rs.getString("email"));
+                contato.setEndereco(rs.getString("endereco"));
+
+                // montando a data através do Calendar
+                Calendar data = Calendar.getInstance();
+                data.setTime(rs.getDate("dataNascimento"));
+                contato.setDataNascimento(data);
+
+                // adicionando o objeto à lista
+                contatos.add(contato);
+            }
+            rs.close();
+            stmt.close();
+            return contatos;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+	
+}

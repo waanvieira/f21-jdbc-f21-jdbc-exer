@@ -1,0 +1,19 @@
+package view;
+
+import dao.Conexao;
+
+public class PessoaInsert {
+	public static void mains(String[] args) {
+		
+	Pessoa p = new Pessoa();
+	
+	p.setNome("Teste");
+	p.setSenha("senha");
+	
+	Conexao con = new Conexao();
+	
+	con.adiciona(p);
+
+}
+
+}

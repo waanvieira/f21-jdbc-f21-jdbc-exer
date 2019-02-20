@@ -1,0 +1,19 @@
+package Objetos;
+
+import DAO.Crud;
+
+public class TestaUsuario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Usuario usu = new Usuario();
+		usu.setUsuario("Usu");
+		usu.setSenha("senha");
+		
+		Crud cr = new Crud();
+		
+		cr.cadastroUsuario(usuario);
+
+	}
+
+}

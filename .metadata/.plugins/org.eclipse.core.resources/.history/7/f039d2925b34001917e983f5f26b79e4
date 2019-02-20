@@ -1,0 +1,70 @@
+package controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import model.Usuario;
+
+//Aqui vai encontrar o nome para a requisição, ele recebe o padrão de URL
+// / a barra significa que o caminho esta sendo lido a partir da pasta raiz
+@WebServlet(urlPatterns= {"/usucontroller", "/usuariocontroller"})
+public class UsuarioController extends HttpServlet{
+	//gerenciador lista
+	 List<Usuario> usuarios = new ArrayList<>();
+	
+	//cadstrar
+	public void cadastrar(Usuario usuario) {
+		usuarios.add(usuario);
+		
+	}
+	
+	public void excluir(Usuario usuario) {
+		usuarios.remove(usuario);
+	}
+	
+	
+	//Métodos HTTp
+	
+	
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//leitura dos inputs
+		String nome = req.getParameter("nome");
+		String senha = req.getParameter("senha");
+		
+		//Instancia o objeto
+		Usuario usuario = new Usuario();
+		//seta os dados
+		usuario.setNome(nome);
+		usuario.setSenha(senha);
+		
+		//Gravar
+		
+		
+		resp.getWriter().println("Cadastrado com sucesso " + nome + " Senha " + senha);
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.getWriter().println("Requisicao pelo Get");
+	}
+	
+	@Override
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.getWriter().println("Requisicao pelo PUT");
+	}
+	
+	@Override
+	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.getWriter().println("Requisicao pelo DELETE");
+	}
+	
+}

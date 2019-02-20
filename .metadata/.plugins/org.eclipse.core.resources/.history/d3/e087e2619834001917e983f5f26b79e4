@@ -1,0 +1,14 @@
+package dao;
+
+import model.usuario;
+import java.sql.Connection;
+
+public class UsuarioDAO {
+	private Connection conn;
+	
+	public UsuarioDAO() {
+		 conn = new Conexao().getConexao();
+		
+		
+	}
+}

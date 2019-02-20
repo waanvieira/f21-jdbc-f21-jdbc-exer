@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to curso</title>
+</head>
+<body>
+<h1><font color="red" size="39px">ola mundo</font></h1>
+<h3>Texto aleatorio a ser feito</h3>
+<form method="post" action="html2.html">
+<label>Digite usuário</label>
+<input type="text" name=variavel id=variavel>
+<br><label>Digite a senha</label>
+<input type="password" name=senha id=senha>
+<input type="button" value=clique aqui>
+</form>
+</body>
+</html>

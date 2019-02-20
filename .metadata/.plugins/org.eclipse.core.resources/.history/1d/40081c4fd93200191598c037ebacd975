@@ -1,0 +1,7 @@
+package cap11;
+
+public class TestaEqualsHashCode {
+	Pessoa p1 = new Pessoa();
+	Pessoa p2 = new Pessoa();
+	
+}

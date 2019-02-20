@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="js/autenticacao.js"></script>
+</head>
+<body>
+<fieldset>procentagem</fieldset>
+	<label>Numero 1</label>
+	<input type=text name=v1 = id=v1 placeholder="digite o numer 1">
+	<label>Porcentagem</label>
+	<input type=text name=p = id=p placeholder="digite o numer 2">
+	<input type=submit onclick="CalculoFinanceiro();" value="calcular números">
+
+
+</body>
+</html>

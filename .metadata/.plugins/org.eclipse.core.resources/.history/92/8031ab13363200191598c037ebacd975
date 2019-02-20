@@ -1,0 +1,10 @@
+package ExerciciosArray;
+
+public class CadastroProgramador {
+	public static void main(String[] args) {
+		Programador pro = new Programador("Programador", "PHP",3.500 );
+	
+	pro.exibeProgramador();
+	}
+
+}

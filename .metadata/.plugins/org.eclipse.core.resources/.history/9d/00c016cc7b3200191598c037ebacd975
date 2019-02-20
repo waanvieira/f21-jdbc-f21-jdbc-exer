@@ -1,0 +1,35 @@
+package cap8.caso5.geral;
+
+public class Endereco {
+	String logadouro;
+	int nr;
+	String bairro;
+	public String getLogadouro() {
+		return logadouro;
+	}
+	public void setLogadouro(String logadouro) {
+		this.logadouro = logadouro;
+	}
+	public int getNr() {
+		return nr;
+	}
+	public void setNr(int nr) {
+		this.nr = nr;
+	}
+	public String getBairro() {
+		return bairro;
+	}
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+	
+	public void setEndereco(String logadouro, int nr, String bairro) {
+		setLogadouro(logadouro);
+		setNr(nr);
+		setBairro(bairro);
+	}
+	
+	public String getDados() {
+		return getLogadouro() + " - " + getNr() + " - " + getBairro(); 
+	}
+}

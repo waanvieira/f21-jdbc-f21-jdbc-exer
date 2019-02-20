@@ -1,0 +1,27 @@
+package br.com.caelum.jdbc;
+
+import java.util.List;
+
+import DAO.ContatoDao;
+
+public class TestaLista {
+	public static void main(String[] args) {
+		ContatoDao dao = new ContatoDao();
+		
+		//List<Contato> contatos = dao.getLista();
+		
+		String forne2[] = {"Nome fornecedor", "890809890", "TIpo do produto 1"};
+		//lista[] =  String ["1, 2, 43, 56, 48"];
+		  for (String forne : forne2) {
+			//for(int i = 0; i< forne2.length; i++) {
+			  System.out.println("Forne é " + forne2[i]);
+			  
+	          /*System.out.println("Nome: " + contato.getNome());
+	          System.out.println("Email: " + contato.getEmail());
+	          System.out.println("Endereço: " + contato.getEndereco());
+	          System.out.println("Data de Nascimento: " + 
+	          contato.getDataNascimento().getTime() + "\n");*/
+	      }
+	}
+
+}

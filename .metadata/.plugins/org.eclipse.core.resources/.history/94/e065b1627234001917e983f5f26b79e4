@@ -1,0 +1,36 @@
+package cap8.caso5;
+
+import cap8.caso5.geral.Endereco;
+
+public class Programador extends Funcionario{
+	String linguage;
+	
+	Programador(String nome, double salario, int idade, String linguagem, String logradouro int nr, String bairro){
+		super(nome, salario idade, new Endereco(logradouro, nr, bairro));
+		this.linguage = linguagem;
+	}
+	
+	public void setDados(String nome, int idade, String endereco, String telefone, double salario){
+		 setDados(nome, idade, endereco, telefone, salario);			
+		 setLinguage(linguage);
+	}
+	public String getLinguage() {
+		return linguage;
+	}
+
+	public void setLinguage(String linguage) {
+		this.linguage = linguage;
+	}
+	
+	public void reajustarSalario() {
+		setSalario(getSalario() + 300);
+		
+	}
+	
+	void mostrarDados() {
+		System.out.println("----------------");
+		super.mostrarDados();
+		System.out.println("Linguage " + getLinguage());
+	}
+	
+}

@@ -1,0 +1,31 @@
+package cap8;
+
+public class CadastroFuncionario {
+	public static void main(String[] args) {
+	
+		Funcionario fun = new Funcionario();
+		Secretaria sec = new Secretaria();
+		Motorista mot = new Motorista();
+		
+		fun.setNome("José");
+		fun.setEstadoCivil(false);
+		fun.setIdade(18);
+		fun.setEndereco("Rua Sergipe");
+		fun.setTelefone("3983098029");
+		fun.setSalario(1800);
+		fun.reajustarSalario();
+		System.out.println("Nome " + fun.getNome());
+		System.out.println("Idade " + fun.getIdade());
+		System.out.println("Salario " + fun.getSalario());
+		
+		mot.setNome("Pedro");
+		mot.setEstadoCivil(true);
+		mot.setIdade(26);
+		mot.setEndereco("Rua Aurora");
+		mot.setTelefone("9890790");
+		mot.reajustarSalario();
+		
+		
+	}
+
+}

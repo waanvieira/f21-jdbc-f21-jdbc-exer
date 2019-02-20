@@ -1,0 +1,5 @@
+package br.edu.naifcode.jdbc;
+
+public class ConexaoUtil {
+
+}

@@ -1,0 +1,23 @@
+package cap8;
+
+public class Funcionario {
+	private String nome;
+	private int idade;
+	private boolean estadoCivil;
+	private String endereco;
+	private String telefone;
+	private double salario;
+	
+	String getNome() {
+		return nome;
+	}
+	
+	void setNome(String nome) {
+		this.nome = nome;
+	}
+	void reajustarSalario() {
+		
+	}
+
+
+}

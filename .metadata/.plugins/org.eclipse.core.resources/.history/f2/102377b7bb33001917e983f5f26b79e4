@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/autenticacao.js"></script>
+<title>Insert title here</title>
+<script src="js/autenticacao.js"></script>
+<script type="text/javascript">
+
+var cars=["Uno","Gol","Monza","Tempra","Parati"];
+for(int = 0; i <cars.length; i++){
+	alert(cars);
+}
+
+</script>
+</head>
+<body>
+<form id=form1 action="FormCadastroUser_exe" >
+<fieldset>Cadastro de usuário</fieldset>
+<label>Nome</label>
+<input type=type name=nome id=nome placeholder="Nome">
+<label>Senh</label>
+<input type="password" name=nome id=senha placeholder="senha">
+<input type="button" value="Salvar">
+
+
+</form>
+</body>
+</html>

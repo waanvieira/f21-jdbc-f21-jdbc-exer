@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/autenticacao.js"></script>
+<meta charset="ISO-8859-1">
+<title>calcular numeros</title>
+</head>
+<body>
+<fieldset>Calcular numeros</fieldset>
+	<label>Numero 1</label>
+	<input type=text name=n1 = id=n1 placeholder="digite o numer 1">
+	<label>Numero 2</label>
+	<input type=text name=n2 = id=n2 placeholder="digite o numer 2">
+	<input type=submit onclick="calcular();" value="calcular números">
+</body>
+</html>

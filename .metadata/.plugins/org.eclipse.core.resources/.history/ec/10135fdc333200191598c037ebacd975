@@ -1,0 +1,13 @@
+package ExerciciosArray;
+
+public class Soma {
+	public static void main(String[] args) {
+	//System.out.println("Numeros " + somar(2,3));
+	//System.out.println("Somar esse também: " + somar(2, 3, 4));
+	
+	
+	public static int somar(int...is){
+		
+	}
+	
+	}

@@ -1,0 +1,10 @@
+package cap8;
+
+public class Secretaria {
+	private int nrSrt;
+	private boolean linguaInglesa;
+	
+	void atenderTelefone() {
+		
+	}
+}

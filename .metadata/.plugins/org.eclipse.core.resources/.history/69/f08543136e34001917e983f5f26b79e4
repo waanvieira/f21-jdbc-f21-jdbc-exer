@@ -1,0 +1,24 @@
+package br.edu.naifcode.jdbc;
+
+import java.sql.DriverManager;
+
+public class ConexaoUtil {
+		
+	private static ConexaoUtil conexaoUtil;
+	
+	public static ConexaoUtil getInstance() {
+		if(conexaoUtil == null) {
+			conexaoUtil = new ConexaoUtil();			
+		}
+		return conexaoUtil;
+	}
+	
+	public Connection getConnection() {
+		Class.forName("com.mysql.jdc.Driver");
+		
+		return DriverManager.getConnection("jdbc:mysql://http://10.11.0.18", "root", "isotopo");
+		
+	}
+	
+	
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/autenticacao.js"></script>
+<title>Insert title here</title>
+<script src="js/autenticacao.js"></script>
+<script type="text/javascript">
+function mostraArray(){
+	var cars = ["Uno","Gol","Monza","Tempra","Parati"];
+	for( i = 0; i < cars.length; i++){
+		alert(cars[i]);		
+	}
+	alert("O numero de carros é: " + cars.count);
+}
+</script>
+</head>
+<body>
+<form id=form1 action="FormCadastroUser_exe" >
+<fieldset>Cadastro de usuário</fieldset>
+<label>Nome</label>
+<input type=type name=nome id=nome placeholder="Nome">
+<label>Senh</label>
+<input type="password" name=nome id=senha placeholder="senha">
+<input type="button" onclick="mostraArray()" value="Salvar">
+
+
+</form>
+</body>
+</html>

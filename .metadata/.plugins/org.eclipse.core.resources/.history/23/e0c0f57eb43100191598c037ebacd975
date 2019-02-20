@@ -1,0 +1,9 @@
+package cap6;
+
+public class UsaFornecedor {
+	public static void main(String[] args) {
+		Fornecedor for = new Fornecedor("Nome fornecedor", "890809890", "Endeco","TIpo do produto 1");
+				
+	}
+
+}

@@ -1,0 +1,12 @@
+package cap2;
+
+public class DeclaracaoDeVariaveis {
+	public static void main(String[] args) {
+		int numero;
+		numero = 8;
+		
+		String texto = "palavra";
+		
+		char c = 'a';
+	}
+}

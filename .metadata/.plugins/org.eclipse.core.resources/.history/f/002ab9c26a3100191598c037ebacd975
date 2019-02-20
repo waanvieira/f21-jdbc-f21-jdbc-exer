@@ -1,0 +1,16 @@
+package cap4;
+
+public class ControleDecisaoIfElse {
+	public static void main(String[] args) {
+		double valorDaCompra = 1000;
+		double valorApagar = 0;
+		
+		if(valorDaCompra >=2000) {
+			valorApagar *= 0.95;			
+		}else if(valorDaCompra < 2000){	
+			valorApagar = 1900;
+		}
+			
+		System.out.println("valor a pagar é " + valorApagar);
+	}
+}

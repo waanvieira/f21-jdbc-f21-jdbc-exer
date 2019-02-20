@@ -1,0 +1,10 @@
+package cap3;
+
+public class OperadoresIncrementaisDecrementais {	
+	public static void main (String[] args) {
+		
+		int x = 3;
+		System.out.println("Resultado " + (++x + 2));
+		System.out.println("Valor de x é: " + x);
+	}
+}

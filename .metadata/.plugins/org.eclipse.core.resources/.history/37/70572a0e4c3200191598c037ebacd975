@@ -1,0 +1,9 @@
+package cap8.caso2;
+
+public class Snippet {
+	public void reajustarSalario() {
+			salario += 100;
+			
+		}
+}
+

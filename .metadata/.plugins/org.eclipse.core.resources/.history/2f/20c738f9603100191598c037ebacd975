@@ -1,0 +1,6 @@
+package cap1;
+
+public class ExemploUm {
+
+	system.out.println("Olá mundo");
+}

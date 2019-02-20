@@ -1,0 +1,25 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import view.Pessoa;
+
+public class Conexao {
+	
+	public static Connection getConnection() throws SQLException{
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("Conectando ao banco");
+			return DriverManager.getConnection("jdbc:mysql://10.11.0.18", "root", "isotopo");
+			//System.out.println("Conectado");
+		}catch (ClassNotFoundException e) {
+			System.out.println("Não conectado");
+			throw new SQLException(e.getMessage());
+		}
+	}
+
+}
+
+

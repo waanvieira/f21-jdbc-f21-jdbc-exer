@@ -1,0 +1,24 @@
+package br.com.caelum.jdbc;
+
+import java.sql.SQLException;
+
+import DAO.ContatoDao;
+
+public class TestaExcluir {
+	public static void main(String[] args) throws SQLException {	
+	Contato contato = new Contato();
+	
+	// pronto para gravar
+	contato.setId(1);
+	
+	//grave nessa conexao
+	ContatoDao dao = new ContatoDao();
+	//metodo elegante cadastra elegante
+	//o método esta sendo instanciado dentro da class
+	dao.atualiza(contato);
+	
+	System.out.println("Contato excluido com sucesso" + contato.getId());	    		
+		
+
+	}
+}

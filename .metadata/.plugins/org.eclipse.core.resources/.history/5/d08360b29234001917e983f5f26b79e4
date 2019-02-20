@@ -1,0 +1,33 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import view.Pessoa;
+
+public class PessoaDao  {
+	  public static void main(String[] args){
+		  
+		  	Connection conexao;
+			try {
+				conexao = ConexaoFatory.criarConexao();
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		  	try {
+		  	conexao.prepareStatement("INSERT INTO tbUsuarios(id,nome, senha) VALUES (?,?,?");
+		  	}
+		  	catch (Exception e) {
+				// TODO: handle exception
+		  		e.printStackTrace();
+			}
+		  	Pessoa p = new Pessoa();
+		  	//String sql = "INSERT INTO tbUsuarios(id,nome, senha) VALUES (?,?,?)";
+	        p.setId(0);
+	        p.setNome("teste");
+	        p.setSenha("Senha");
+	    }
+	
+
+}

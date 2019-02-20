@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<%@page import="model.Usuario" %>
+<%@page import="dao.UsuarioDAO" %>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		try{
+			
+			UsuarioDAO usudao = new UsuarioDAO();
+			usudao.excluir(Integer.parseInt(request.getParameter("id")));			
+		}catch(Exception erro){
+			throw new RuntimeException("Erro 7" + erro);
+			
+		}
+		
+	%>
+	
+</body>
+</html>

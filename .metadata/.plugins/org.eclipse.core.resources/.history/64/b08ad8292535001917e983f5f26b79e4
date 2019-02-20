@@ -1,0 +1,16 @@
+package br.com.caelum.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectioFactory {
+	public Connection getConnection() {
+		try {
+			//Class.forName("org.postgresql.Driver");
+			return DriverManager.getConnection("jdbc:postgres:http//localhost:5432/tbUsuarios", "postgres", "postgres");
+		}catch (Exception e) {
+			throw new RuntimeException(e);
+			// TODO: handle exception
+		}
+	}
+}

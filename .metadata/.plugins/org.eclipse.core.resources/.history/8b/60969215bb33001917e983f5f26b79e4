@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form id=form1 action="FormCadastroUser_exe" >
+<fieldset>Cadastro de usuário</fieldset>
+<label>Nome</label>
+<input type=type name=nome id=nome>
+<label>Senh</label>
+<input type=senha name=nome id=senha>
+
+
+</form>
+</body>
+</html>

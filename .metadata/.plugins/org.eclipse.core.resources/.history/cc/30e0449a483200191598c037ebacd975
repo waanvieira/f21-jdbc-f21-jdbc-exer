@@ -1,0 +1,28 @@
+package cap8;
+
+public class Secretaria {
+	private int nrSrt;
+	private boolean linguaInglesa;
+	
+	public int getNrSrt() {
+		return nrSrt;
+	}
+
+	public void setNrSrt(int nrSrt) {
+		this.nrSrt = nrSrt;
+	}
+
+	public boolean isLinguaInglesa() {
+		return linguaInglesa;
+	}
+
+	public void setLinguaInglesa(boolean linguaInglesa) {
+		this.linguaInglesa = linguaInglesa;
+	}
+
+	
+	
+	void atenderTelefone() {
+		
+	}
+}

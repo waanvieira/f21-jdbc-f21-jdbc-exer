@@ -1,0 +1,45 @@
+package ExerciciosArray;
+
+public class Programador {
+	
+	private String nome;
+	private String linguagem;
+	private double salario;
+	
+	Programador(){
+		
+	}
+	
+	Programador(String nome, String linguagem, double salario){
+		getNome();
+		getLinguagem();
+		getSalario();
+		
+	}
+	//NOME
+	void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	String getNome() {
+		return nome;
+	}
+	//linguagem
+		void setLinguagem(String linguagem) {
+			this.linguagem = linguagem;
+		}
+		
+		String getLinguagem() {
+			return linguagem;
+		}
+		//salario
+				void setSalario(double salario) {
+					this.salario = salario;
+				}
+				
+				double getSalario() {
+					return salario;
+				}
+	
+
+}

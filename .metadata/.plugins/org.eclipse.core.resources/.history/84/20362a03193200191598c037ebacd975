@@ -1,0 +1,16 @@
+package cap7;
+
+public class ArrayMultidimensional {
+	public static void main(String[] args) {
+	
+	String cidades[][] = new String[2][3];
+	cidades[0][0] = "São Paulo";
+	cidades[0][1] = "Barretos";
+	cidades[1][0] = "Belo Horizonte";
+	cidades[1][1] = "Ouro preto";
+	cidades[2][0] = "Curitiba";
+	cidades[2][1] = "Londrina";
+	
+	
+ 	}
+}

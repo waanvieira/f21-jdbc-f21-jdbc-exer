@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+sc<script type="text/javascript">
+//Criando a class
+CalculoFinanceiro = function(){}
+
+	//criacao de método
+	CalculoFinanceiro.prototype.calculoPorgentagem = function(valor, porc) {
+		resultado = (valor * porc)/100;	
+		return resultado;	
+	}
+	//Instanciando o objeto
+	cf = new CalculoFinanceiro()
+	f = cf.calculoPorgentagem(1200, 10);
+	//resultado
+	alert(resultado);
+</script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

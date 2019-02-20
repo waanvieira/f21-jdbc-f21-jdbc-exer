@@ -1,0 +1,11 @@
+package ExerciciosArray;
+
+public class Proramador {
+	
+	private String nome;
+	private String linguagem;
+	private double salario;
+	
+	progr
+
+}

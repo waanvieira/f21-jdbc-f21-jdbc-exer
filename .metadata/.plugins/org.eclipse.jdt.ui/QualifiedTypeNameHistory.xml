@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.net.ssl.SSLEngineResult.Status"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="java.util.function.Function"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="cap2.AliquotaIr"/>
+<fullyQualifiedTypeName name="cap5.UsaPessa"/>
+<fullyQualifiedTypeName name="cap5.Pessoa"/>
+<fullyQualifiedTypeName name="cap5.Cachorro"/>
+<fullyQualifiedTypeName name="cap5.ExibeCachorro"/>
+<fullyQualifiedTypeName name="cap5.TestaGato"/>
+<fullyQualifiedTypeName name="cap5.Gato"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+<fullyQualifiedTypeName name="cap5.Contrutores"/>
+<fullyQualifiedTypeName name="cap6.Fornecedor"/>
+<fullyQualifiedTypeName name="java.awt.font.NumericShaper"/>
+<fullyQualifiedTypeName name="ExerciciosArray.Programador"/>
+<fullyQualifiedTypeName name="cap8.Secretaria"/>
+<fullyQualifiedTypeName name="cap8.Motorista"/>
+<fullyQualifiedTypeName name="cap8.Programador"/>
+<fullyQualifiedTypeName name="cap8.Pessoa"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.parser.Parser"/>
+<fullyQualifiedTypeName name="cap8.caso5.geral.Endereco"/>
+<fullyQualifiedTypeName name="cap8.Funcionario"/>
+<fullyQualifiedTypeName name="cap8.caso5.geral.Funcionario"/>
+<fullyQualifiedTypeName name="Polimorfismo.Transporte"/>
+<fullyQualifiedTypeName name="Polimorfismo.Veiculo"/>
+<fullyQualifiedTypeName name="Polimorfismo.Carro"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="cap11.Fruta"/>
+<fullyQualifiedTypeName name="cap11.Pessoa"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

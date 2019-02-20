@@ -1,0 +1,38 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import view.Pessoa;
+
+public class PessoaDao  {
+	  public static void main(String[] args) throws SQLException {
+		  
+		  	Connection conexao = ConexaoFatory.criarConexao();
+		  	try {
+		  		
+		  		//Prepara o statemen	  		
+		  		PreparedStatement preparaSQL = conexao.prepareStatement("INSERT INTO tbUsuarios(id,nome, senha) VALUES (?,?,?");
+		  		Pessoa p = new Pessoa();
+			  	//String sql = "INSERT INTO tbUsuarios(id,nome, senha) VALUES (?,?,?)";
+		        //preparadorSQL.setString(1, p.getId());
+		        //preparadorSql.
+		  		
+		  		p.setId(0);
+		        p.setNome("teste");
+		        p.setSenha("Senha");
+		        
+		        p.execute();
+		        p.close();
+		        
+		  	}
+		  	catch (Exception e) {
+				// TODO: handle exception
+		  		e.printStackTrace();
+			}
+		  	
+	    }
+	
+
+}

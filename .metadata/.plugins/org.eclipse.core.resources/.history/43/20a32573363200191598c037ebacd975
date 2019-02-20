@@ -1,0 +1,16 @@
+package ExerciciosArray;
+
+public class CadastroProgramador {
+	public static void main(String[] args) {
+		Programador pro = new Programador("Programador", "PHP",3.500 );
+	
+	String arrayProgramadores[] = {"Horácio", "PHP", "t"};
+	for(String pr : arrayProgramadores) {
+		System.out.println(pr);
+		
+	}
+	System.out.println("---------------");
+	pro.exibeProgramador();
+	
+	}
+}

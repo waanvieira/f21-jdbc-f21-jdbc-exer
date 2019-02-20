@@ -1,0 +1,28 @@
+package cap5;
+
+public class Gato {
+	String nome;
+	String raca;
+	int idade;
+	boolean vacina;
+	
+	String getNome(String gato) {
+		return gato;
+	}
+	void setNome(String nome) {
+		this.nome = nome;
+	}
+	String getRaca(String raca) {
+		return raca;
+	}
+	void setIdade(String idade) {
+		this.idade = idade;
+	}
+	String getIdade(int idade) {
+		return idade;
+	}
+	void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+}

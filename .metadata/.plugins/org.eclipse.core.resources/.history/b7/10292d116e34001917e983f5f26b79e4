@@ -1,0 +1,15 @@
+package br.edu.naifcode.jdbc;
+
+public class ConexaoUtil {
+		
+	private static ConexaoUtil conexaoUtil;
+	
+	public static ConexaoUtil getInstance() {
+		if(conexaoUtil == null) {
+			conexaoUtil = new ConexaoUtil();			
+		}
+		return conexaoUtil;
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package dao;
+import java.sql.Connection;
+
+import org.apache.jasper.tagplugins.jstl.core.Catch;
+
+public class UsuarioDAO {
+	private Connection conn;
+	
+	public UsuarioDAO() {
+		 conn = new Conexao().getConexao();	
+	}
+		
+	
+}

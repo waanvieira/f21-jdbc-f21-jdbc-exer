@@ -1,0 +1,16 @@
+package cap2;
+
+public class ArrayTexto {
+	public static void main (String[] args) {
+		String texto[] = new String[4];
+		texto[0] ="um";
+		texto[1] ="dois";
+		texto[2] ="tres";
+		texto[3] ="quatro";
+		texto[4] ="cinco";
+		
+		for(int i = 0; i <texto.length; i++) {
+			System.out.println("Texto: " + texto[i]);
+		}
+	}
+}

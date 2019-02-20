@@ -1,0 +1,11 @@
+package cap11;
+
+public class ExemploGenericos {
+	public static void main(String[] texto) {
+		for (String string : texto) {
+			System.out.println(String + " ");
+		}
+		System.out.println("-----------------------");
+		
+	}
+}

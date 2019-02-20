@@ -1,0 +1,59 @@
+package cap11;
+
+public class ExemploGenericos {
+	
+	//TIPO GENERICO ECONOMIZA ESSE MONTE DE COD
+	//public static <G> void exibir(G[] coisa){
+	//for (G g : coisa){
+	//	System.out.println(g);
+	//}
+	//System.out.println("---------------");
+	//}
+	public static void exibir(String[] texto) {
+		for (String string : texto) {
+			System.out.println(string + " ");
+		}
+		System.out.println("---------------");
+		
+	}
+	
+	public static void exibir(Integer[] numeros) {
+		for (Integer integer : numeros) {
+			System.out.println(integer + " ");
+		}
+		System.out.println("---------------");
+		
+	}
+	
+	public static void exibir(Pessoa[] pessoas) {
+		for (Pessoa pessoa : pessoas) {
+			System.out.println(pessoa + " ");
+		}
+		System.out.println("---------------");
+		
+	}
+	
+	public static void exibir(Fruta[] frutas) {
+		for (Fruta fruta : frutas) {
+			System.out.println(fruta + " ");
+		}
+		System.out.println("---------------");
+		
+	}
+	
+	public static void main(String[] args) {
+	String[] colecaoTexto = {"Java", "é", "Divertido..."};
+	Fruta[] colecaoFrutas = {new Fruta("Abacaxi"), new Fruta("Uva"), new Fruta("Fruta")};	
+	Pessoa[] colecaoPessoa = {new Pessoa("P1"), new Pessoa("P 2")};
+	Integer[] colecaoInteiros = {14,67,35,66,77};
+	
+	
+	exibir(colecaoTexto);
+	exibir(colecaoFrutas);
+	exibir(colecaoPessoa);
+	exibir(colecaoInteiros);
+	
+	}
+	
+	
+}

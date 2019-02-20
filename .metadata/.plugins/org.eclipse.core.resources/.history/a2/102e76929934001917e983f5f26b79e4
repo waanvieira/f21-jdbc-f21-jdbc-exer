@@ -1,0 +1,26 @@
+package dao;
+
+import model.Usuario;
+import java.sql.Connection;
+
+import org.apache.jasper.tagplugins.jstl.core.Catch;
+
+public class UsuarioDAO {
+	private Connection conn;
+	
+	public UsuarioDAO() {
+		 conn = new Conexao().getConexao();	
+	}
+		
+	public void inserir(Usuario usuario) {
+		String sql="";
+		try {
+			
+		}catch (Exception e) {
+			System.out.println("Conexao falhou erro " );
+			// TODO: handle exception
+		}
+		
+	}
+	
+}

@@ -1,0 +1,23 @@
+package cap8.caso2;
+
+public class Programador extends Funcionario{
+	String linguage;
+	
+	public String getLinguage() {
+		return linguage;
+	}
+
+	public void setLinguage(String linguage) {
+		this.linguage = linguage;
+	}
+	
+	public void reajustarSalario() {
+		salario += 300;
+		
+	}
+	
+	void mostrarDados() {
+	System.out.println("Linguage " + getLinguage());
+	}
+	
+}

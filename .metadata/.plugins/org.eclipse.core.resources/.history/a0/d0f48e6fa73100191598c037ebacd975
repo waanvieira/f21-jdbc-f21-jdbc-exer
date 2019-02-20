@@ -1,0 +1,7 @@
+package cap5;
+
+
+public class TestaGato {
+ Gato g = new Gato();
+
+}
